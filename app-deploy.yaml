@@ -44,7 +44,7 @@ metadata:
   name: sample-java-microprofile
 spec:
   applicationImage: dev.local/sample-java-microprofile
-  createKnativeService: false
+  createKnativeService: true
   expose: true
   livenessProbe:
     failureThreshold: 12
