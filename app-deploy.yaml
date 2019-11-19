@@ -4,16 +4,16 @@ metadata:
   annotations:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
-    build-date: 2019-07-23T16:20:54.720447
+    build-date: 2019-10-29T16:44:53.794580
     commit.image.appsody.dev/author: Daniel Cleyrat <dacleyra@us.ibm.com>
-    commit.image.appsody.dev/committer: GitHub <noreply@github.com>
-    commit.image.appsody.dev/date: Mon Nov 11 10:30:35 2019 -0500
-    commit.image.appsody.dev/message: Initial commit
+    commit.image.appsody.dev/committer: Daniel Cleyrat <dacleyra@us.ibm.com>
+    commit.image.appsody.dev/date: Mon Nov 11 10:42:11 2019 -0500
+    commit.image.appsody.dev/message: serverless
     description: This image contains the Kabanero development stack for the java-microprofile
       collection
     distribution-scope: public
-    image.opencontainers.org/created: "2019-11-11T10:34:17-05:00"
-    image.opencontainers.org/revision: 4d62a41af9679b0644fbf980dbde211c093b68e5-modified
+    image.opencontainers.org/created: "2019-11-19T08:55:52-05:00"
+    image.opencontainers.org/revision: d996a7e859fdf0a63959d7afa29c2e8d24b6cd93-modified
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -24,23 +24,23 @@ metadata:
     name: kabanero/java-microprofile
     openshift.io/expose-services: ""
     openshift.io/tags: base rhel8
-    redhat.com/build-host: cpt-1006.osbs.prod.upshift.rdu2.redhat.com
+    redhat.com/build-host: cpt-1002.osbs.prod.upshift.rdu2.redhat.com
     redhat.com/component: ubi8-container
     redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
-    release: "154"
+    release: "277"
     stack.appsody.dev/configured: kabanero/java-microprofile:0.2
-    stack.appsody.dev/created: 2019-11-08T17:19:29+0000
-    stack.appsody.dev/revision: 5eeb48d7026977e2bfcc71ec80d3783db81bcf4c
-    stack.appsody.dev/tag: kabanero/java-microprofile:0.2.18
+    stack.appsody.dev/created: 2019-11-18T19:06:18+0000
+    stack.appsody.dev/revision: 82c11bd3fda141fc56df6653a58a3567dfe87d46
+    stack.appsody.dev/tag: kabanero/java-microprofile:0.2.19
     summary: Image for Kabanero java-microprofile development
-    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.0-154
-    vcs-ref: b80158ff460c2cd8958e35c55b0c7f50ca17638e
+    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-277
+    vcs-ref: c42933bcdbf9f1c232e981a5e40de257c3534c8e
     vcs-type: git
     vendor: Kabanero
     version: 0.2.10
   labels:
     image.opencontainers.org/title: sample-java-microprofile
-    stack.appsody.dev/version: 0.2.18
+    stack.appsody.dev/version: 0.2.19
   name: sample-java-microprofile
 spec:
   applicationImage: dev.local/sample-java-microprofile
@@ -60,6 +60,7 @@ spec:
       port: 9080
     initialDelaySeconds: 5
     periodSeconds: 2
+    timeoutSeconds: 1
   service:
     annotations:
       prometheus.io/scrape: "true"
