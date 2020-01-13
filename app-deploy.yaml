@@ -5,15 +5,10 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2019-10-29T16:44:53.794580
-    commit.image.appsody.dev/author: Daniel Cleyrat <dacleyra@us.ibm.com>
-    commit.image.appsody.dev/committer: Daniel Cleyrat <dacleyra@us.ibm.com>
-    commit.image.appsody.dev/date: Tue Dec 3 16:35:22 2019 -0500
-    commit.image.appsody.dev/message: $RELEASE
     description: This image contains the Kabanero development stack for the java-microprofile
       collection
     distribution-scope: public
-    image.opencontainers.org/created: "2019-12-03T16:35:58-05:00"
-    image.opencontainers.org/revision: 9e8b216a8f53275104f26b8c3191017842c6163c-modified
+    image.opencontainers.org/created: "2020-01-13T11:22:41-05:00"
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -28,19 +23,26 @@ metadata:
     redhat.com/component: ubi8-container
     redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
     release: "277"
-    stack.appsody.dev/configured: kabanero/java-microprofile:0.2
-    stack.appsody.dev/created: 2019-12-02T20:40:12+0000
-    stack.appsody.dev/revision: a91ca0fd6288542b08268b4299b55ae81718fbc4
-    stack.appsody.dev/tag: kabanero/java-microprofile:0.2.19
+    stack.appsody.dev/authors: Emily Jiang <emijiang6@googlemail.com>, Neeraj Laad
+      <neeraj.laad@gmail.com>, Ozzy <ozzy@ca.ibm.com>
+    stack.appsody.dev/configured: docker.io/kabanerobeta/java-microprofile:0.2
+    stack.appsody.dev/created: "2020-01-10T22:32:51Z"
+    stack.appsody.dev/description: Eclipse MicroProfile on Open Liberty & OpenJ9 using
+      Maven
+    stack.appsody.dev/licenses: Apache-2.0
+    stack.appsody.dev/tag: docker.io/kabanerobeta/java-microprofile:0.2.21
+    stack.appsody.dev/title: Eclipse MicroProfile®
     summary: Image for Kabanero java-microprofile development
     url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-277
     vcs-ref: c42933bcdbf9f1c232e981a5e40de257c3534c8e
     vcs-type: git
     vendor: Kabanero
-    version: 0.2.10
+    version: 0.2.21
+  creationTimestamp: null
   labels:
     image.opencontainers.org/title: sample-java-microprofile
-    stack.appsody.dev/version: 0.2.19
+    stack.appsody.dev/id: java-microprofile
+    stack.appsody.dev/version: 0.2.21
   name: sample-java-microprofile
 spec:
   applicationImage: dev.local/sample-java-microprofile
@@ -68,3 +70,4 @@ spec:
     type: NodePort
   stack: java-microprofile
   version: 1.0.0
+status: {}
