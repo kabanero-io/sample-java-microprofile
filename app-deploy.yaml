@@ -8,7 +8,7 @@ metadata:
     description: This image contains the Kabanero development stack for the java-microprofile
       collection
     distribution-scope: public
-    image.opencontainers.org/created: "2020-01-13T11:22:41-05:00"
+    image.opencontainers.org/created: "2020-01-14T15:48:41-05:00"
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -26,7 +26,7 @@ metadata:
     stack.appsody.dev/authors: Emily Jiang <emijiang6@googlemail.com>, Neeraj Laad
       <neeraj.laad@gmail.com>, Ozzy <ozzy@ca.ibm.com>
     stack.appsody.dev/configured: docker.io/kabanerobeta/java-microprofile:0.2
-    stack.appsody.dev/created: "2020-01-10T22:32:51Z"
+    stack.appsody.dev/created: "2020-01-14T12:30:00Z"
     stack.appsody.dev/description: Eclipse MicroProfile on Open Liberty & OpenJ9 using
       Maven
     stack.appsody.dev/licenses: Apache-2.0
