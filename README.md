@@ -1,1 +1,1 @@
-kabanero-io/collections java-microprofile stack release 0.6.2
+kabanero-io/kabanero-stack-hub java-microprofile release 0.7.0
